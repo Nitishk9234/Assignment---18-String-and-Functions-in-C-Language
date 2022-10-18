@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char first[100],second[80];
+    printf("enter String :");
+    fgets(first,100,stdin);
+    fgets(second,80,stdin);
+    int r;
+    r=strcmp(first,second);
+    if(r==-1)
+        printf("dictionary order");
+    else if(r==0)
+        printf("eqaul");
+    else
+        printf("opposite of dictionary order");
+    return 0;
+}
